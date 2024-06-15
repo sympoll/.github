@@ -1,4 +1,15 @@
-## Welcome :)
+# Welcome :)
+## About
+**Workshop:** Cloud Native Development with Kubernetes
+**Mentor:** Benny Rochwerger
+**Project name:** Sympoll
+**Group name:** MTAPizza
+**Members:** Roy Toledano, Idan Shalom, Ronen Gelmanovich
+**Project Track:** Entrepreneurial
+
+## What is Sympoll?
+Sympoll is an online surveying platform designed for optimal scalability using Kubernetes. It was developed to address the challenges of conducting effective surveys in environments where group conversations can disrupt the survey process, such as WhatsApp. Sympoll aims to provide a comprehensive solution for various survey needs, integrating a hierarchical polling system with multiple user roles and group functionalities.
+Sympoll is targeted at a diverse audience, including community organizers, social planners, students, and corporate leaders, providing a streamlined and accessible platform for all types of survey needs​​.
 
 ## Automated Workflow
 
