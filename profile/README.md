@@ -1,10 +1,15 @@
 # Welcome :)
 ## About
 **Workshop:** Cloud Native Development with Kubernetes
+
 **Mentor:** Benny Rochwerger
+
 **Project name:** Sympoll
+
 **Group name:** MTAPizza
+
 **Members:** Roy Toledano, Idan Shalom, Ronen Gelmanovich
+
 **Project Track:** Entrepreneurial
 
 ## What is Sympoll?
