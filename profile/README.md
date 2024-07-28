@@ -12,9 +12,15 @@
 
 **Project Track:** Entrepreneurial
 
+
+<br />   
+
 ## What is Sympoll?
 Sympoll is an online surveying platform designed for optimal scalability using Kubernetes. It was developed to address the challenges of conducting effective surveys in environments where group conversations can disrupt the survey process, such as WhatsApp. Sympoll aims to provide a comprehensive solution for various survey needs, integrating a hierarchical polling system with multiple user roles and group functionalities.
 Sympoll is targeted at a diverse audience, including community organizers, social planners, students, and corporate leaders, providing a streamlined and accessible platform for all types of survey needs​​.
+
+
+<br />   
 
 ## Project's Architecture
 #### Entry Point:
@@ -35,16 +41,25 @@ Sympoll is targeted at a diverse audience, including community organizers, socia
     *	Role: Manages the voting process within the application, including casting votes and tallying results.
     *	Interaction: Interacts with the poll management service and the database to record and retrieve vote data.
 
+
+<br />   
+
 ## Automated Workflow
 
 - On push to the main branch, a workflow is triggered to automate the building of the container and pushing of its image to our GitHub Packages.
 - The versioning of the containers is according to the dates at which they were published to the packages.
 
+
+<br />   
+
 ## Approval Process
 
 - Any push to the main branch requires at least one member of the organization to approve.
 
-## Using the container
+
+<br />   
+
+## Using containers
 
 ### Login
 
@@ -68,7 +83,7 @@ Once you have successfully connected your docker and github account, pull the im
 ```bash
 docker pull ghcr.io/sympoll/{IMAGE_NAME}:{TAG}
 ```
-
+   
 ### Run a container instance
 
 After pulling the image, you can now run a container instance.
@@ -77,13 +92,18 @@ After pulling the image, you can now run a container instance.
 docker run -d --name {CONTAINER_NAME} -p {IMAGE_PORT}:{IMAGE_PORT} -e POSTGRES_PASSWORD={PASSWORD} {IMAGE_HASH}
 ```
 
-<!--
+<br />   
 
-**Here are some ideas to get you started:**
+## Debugging
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+### Console pod for debugging the Kubernetes Cluster's Network
+For networking debugging inside the Kubernetes Cluster, you can connect to the console pod.   
+This pod can send requests to other pods in the cluster, check other pods' logs, etc.
+1. To pull and run the console pod:
+```bash
+kubectl run --image quay.io/brochwer/console console
+```
+2. To connect to the console pod to start debugging:
+```bash
+kubectl exec -ti console -- /usr/bin/bash
+```
