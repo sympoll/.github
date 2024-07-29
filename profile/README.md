@@ -98,7 +98,7 @@ docker run -d --name {CONTAINER_NAME} -p {IMAGE_PORT}:{IMAGE_PORT} -e POSTGRES_P
 
 ### Console pod for debugging the Kubernetes Cluster's Network
 For networking debugging inside the Kubernetes Cluster, you can connect to the console pod.   
-This pod can send requests to other pods in the cluster, check other pods' logs, etc.
+This pod can send requests to other pods in the cluster, use commands inside the network, etc.
 1. To pull and run the console pod:
 ```bash
 kubectl run --image quay.io/brochwer/console console
@@ -106,4 +106,14 @@ kubectl run --image quay.io/brochwer/console console
 2. To connect to the console pod to start debugging:
 ```bash
 kubectl exec -ti console -- /usr/bin/bash
+```
+<br />   
+   
+Then to check that the DNS is configured correctly:
+```bash
+nslookup {domain-name}
+```
+To check logs of a pod (outside of the console pod):
+```bash
+kubectl logs {pod-full-name}
 ```
