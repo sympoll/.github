@@ -24,36 +24,37 @@ Sympoll is targeted at a diverse audience, including community organizers, socia
 
 ## Project's Architecture
 #### Entry Point:
-*	**Frontend Service:**
-    * `Role:` Acts as the user interface or API gateway. It handles incoming requests from users or other systems, routes them to the appropriate web page, and communicates with the appropriate backend services to pull/push data from the database.
+*   [Frontend Service:](https://github.com/sympoll/front-end-service)
+
+    *	`Role:` Acts as the user interface or API gateway. It handles incoming requests from users or other systems, routes them to the appropriate web page, and communicates with the appropriate backend services to pull/push data from the database.
     * `Service Port:` 8080
    
 #### Microservices:
-*	**API Gateway:**
+*	[API Gateway:](https://github.com/sympoll/api-gateway-service)   
     *	`Role:` Handles external requests to expose the cluster to the outside world.
     *	`Interaction:` Receives requests from the frontend service, routes them to the service requested according to the endpoint of the request.
       Each request should have the endpoint '/api' with the suffix of the wanted service to communicate with.
     *	`Service Port:` 8081   
          
-*	**Poll Service:**
+*	[Poll Service:](https://github.com/sympoll/poll-service)
     *	`Role:` Handles the creation, updating, and management of polls.
     *	`Interaction:` Interfaces with the poll database to store poll data and processes requests from the frontend service.
     *	`Service Port:` 8082
     *	`DB Port:` 5432
          
-*	**User Service:**
+*	[User Service:](https://github.com/sympoll/user-service)
     *	`Role:` Manages user-related functionalities, such as user registration, authentication, and profile management.
     *	`Interaction:` Receives requests from the frontend service and interacts with the users database to store and retrieve user data.
     *	`Service Port:` 8083
     *	`DB Port:` 5433   
          
-*	**Vote Service:**
+*	[Vote Service:](https://github.com/sympoll/vote-service)
     *	`Role:` Manages the voting process within the application, including casting votes and tallying results.
     *	`Interaction:` Interacts with the poll management service and the votes database to record and retrieve vote data.
     *	`Service Port:` 8084
     *	`DB Port:` 5434
     
-*	**Group Service:**
+*	[Group Service:](https://github.com/sympoll/group-service)
     *	`Role:` Manages groups within the application, such as creating, updating, and deleting groups.
     *	`Interaction:` Communicates with the groups database to manage group-related data and receives requests routed through the frontend service.
     *	`Service Port:` 8085
