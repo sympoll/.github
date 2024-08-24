@@ -1,5 +1,9 @@
-# Welcome :)
-## About
+# Welcome to Sympoll™   
+<br />   
+   
+<img src="https://github.com/user-attachments/assets/21ac4b41-d12e-43b7-80dd-0c7ae80326de" alt="drawing" width="320" align="left" style="margin-right: 20px;" />   
+
+### About
 **Workshop:** Cloud Native Development with Kubernetes
 
 **Mentor:** Benny Rochwerger
@@ -11,15 +15,43 @@
 **Members:** Roy Toledano, Idan Shalom, Ronen Gelmanovich
 
 **Project Track:** Entrepreneurial
-
+   
+<br />   
 
 <br />   
 
+
 ## What is Sympoll?
-Sympoll is an online surveying platform designed for optimal scalability using Kubernetes. It was developed to address the challenges of conducting effective surveys in environments where group conversations can disrupt the survey process, such as WhatsApp. Sympoll aims to provide a comprehensive solution for various survey needs, integrating a hierarchical polling system with multiple user roles and group functionalities.
-Sympoll is targeted at a diverse audience, including community organizers, social planners, students, and corporate leaders, providing a streamlined and accessible platform for all types of survey needs​​.
+Sympoll is an online surveying platform designed for optimal scalability using Kubernetes. It was developed to address the challenges of conducting effective surveys in environments where group conversations can disrupt the survey process.
 
+Sympoll is targeted at a diverse audience, including community organizers, social planners, students, and corporate leaders, providing a streamlined and accessible platform for all types of survey needs.​
 
+<br />    
+
+## Technologies Used:   
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>Frontend Related:</h3>
+      <a href="https://github.com/Idan-sh">
+        <img src="https://skillicons.dev/icons?i=react,vite,typescript,css,html&perline=16&theme=light" alt="Frontend Related Skills" />
+      </a>
+       <br /> 
+    </td>
+    <td align="center">
+      <h3>Backend Related:</h3>
+      <a href="https://github.com/Idan-sh">
+        <img src="https://skillicons.dev/icons?i=java,spring,maven,postgresql&perline=16&theme=light" alt="Backend Related Skills" />
+      </a>
+    </td>
+    <td align="center">
+      <h3>Devops Related:</h3>
+      <a href="https://github.com/Idan-sh">
+        <img src="https://skillicons.dev/icons?i=kubernetes,git,github,githubactions&perline=16&theme=light" alt="DevOps Related Skills" />
+      </a>
+    </td>
+  </tr>
+</table>
 <br />   
 
 ## Project's Architecture
