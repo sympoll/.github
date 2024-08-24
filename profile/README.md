@@ -3,7 +3,9 @@
    
 <img src="https://github.com/user-attachments/assets/21ac4b41-d12e-43b7-80dd-0c7ae80326de" alt="drawing" width="360" align="left" />   
 <br />    
-   
+
+<br />    
+
 ### About
 **Workshop:** Cloud Native Development with Kubernetes
 
