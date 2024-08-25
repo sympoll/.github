@@ -36,7 +36,7 @@ Sympoll is targeted at a diverse audience, including community organizers, socia
   <tr>
     <td align="center">
       <h3>Frontend Related:</h3>
-      <a href="https://github.com/Idan-sh">
+      <a href="https://github.com/sympoll">
         <img src="https://skillicons.dev/icons?i=react,vite,typescript,css,html&perline=16&theme=light" alt="Frontend Related Skills" />
       </a>
        <br /> 
