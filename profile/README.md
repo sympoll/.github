@@ -91,9 +91,16 @@ Sympoll is targeted at a diverse audience, including community organizers, socia
     
 *	[Group Service:](https://github.com/sympoll/group-service)
     *	`Role:` Manages groups within the application, such as creating, updating, and deleting groups.
-    *	`Interaction:` Communicates with the groups database to manage group-related data and receives requests routed through the frontend service.
+    *	`Interaction:` Communicates with the group database to manage group-related data and receives requests routed through the frontend service.
     *	`Service Port:` 8085
-    *	`DB Port:` 5435:5432 (external:internal)   
+    *	`DB Port:` 5435:5432 (external:internal)
+ 
+*	[Media Service:](https://github.com/sympoll/media-service)
+    *	`Role:` Manages media storage within the application. Used mostly for user profile pictures and banners.
+    *	`Interaction:` Communicates with the media database to manage image file data and receives requests routed through the frontend service.
+      Interacts with the user service to save the user's profile image URLs.
+    *	`Service Port:` 8086
+    *	`DB Port:` 5436:5432 (external:internal)   
 
 
 
